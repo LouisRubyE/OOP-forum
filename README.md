@@ -24,13 +24,14 @@ classDiagram
         - salesHistory: Sales[]
         - count: int
         + SalesPerson(id: String)
+        + SalesPerson(id: String, s: Sales[], c: int)
         + getCount(): int
         + getId(): String
         + setSalesHistory(s: Sales): void
         + calcTotalSales(): double
         + largestSale(): Sales
     }
-    
+
     class Sales {
         - itemId: String
         - value: double
@@ -39,7 +40,8 @@ classDiagram
         + getValue(): double
         + getQuantity(): int
     }
-SalesPerson "1" -- "*" Sales : contains
+
+    SalesPerson "1" -- "*" Sales : contains
 
 
 (ii)
