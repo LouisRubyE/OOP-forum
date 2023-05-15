@@ -18,30 +18,7 @@ To access the private instance variables from outside the class.
 (c)
 
 (i)
-classDiagram
-    class SalesPerson {
-        - id: String
-        - salesHistory: Sales[]
-        - count: int
-        + SalesPerson(id: String)
-        + SalesPerson(id: String, s: Sales[], c: int)
-        + getCount(): int
-        + getId(): String
-        + setSalesHistory(s: Sales): void
-        + calcTotalSales(): double
-        + largestSale(): Sales
-    }
-
-    class Sales {
-        - itemId: String
-        - value: double
-        - quantity: int
-        + Sales(itemId: String, value: double, quantity: int)
-        + getValue(): double
-        + getQuantity(): int
-    }
-
-    SalesPerson "1" -- "*" Sales : contains
+![5](https://github.com/LouisRubyE/OOP-forum/assets/114371921/e585fbd9-fbff-4413-aa7d-516f57d82fe9)
 
 
 (ii)
@@ -67,7 +44,7 @@ Any changes to the Sales object may require corresponding updates in the SalesPe
 ![4](https://github.com/LouisRubyE/OOP-forum/assets/114371921/1d29bf9e-8b4f-4e77-b302-a9fdb6876ad0)
 
 (h)
-
+Adding a new attribute salary to store the salary of each salesperson. 
 
 (i)
-
+Polymorphism is demonstrated in the suite of programs through the use of inheritance and method overriding.
